@@ -1,0 +1,10 @@
+<div class="container-form-contact">
+    <input type="text" placeholder="Title" data-bind="textInput: title,
+                                                      css: titleValid"/><br/>
+    <textarea placeholder="Text" data-bind="textInput: text,
+                                            css: textValid"></textarea><br/>
+    <input type="email" placeholder="E-Mail (optional)"  data-bind="textInput: email"/><br/>
+
+    <button data-bind="click: sendFormular,
+                       visible: formValid">Send</button>
+</div>

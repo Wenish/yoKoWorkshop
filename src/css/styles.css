@@ -1,0 +1,20 @@
+#page {
+    margin-top: 80px;
+}
+
+.input-valid {
+    background: green;
+}
+
+.input-invalid {
+    background: red;
+}
+
+.post{
+	max-width: 500px;
+	margin: auto;
+}
+
+.post-img{
+	width: 100%;
+}

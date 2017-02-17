@@ -1,7 +1,7 @@
 <div class="post">
-    <div class="post-title">Title</div>
+    <div class="post-title" data-bind="text: title">Title</div>
     <div class="post-container-img">
-        <img class="post-img" src="./images/katze.jpg" />
+        <img class="post-img" src="#" data-bind="attr: { src: img }"/>
     </div>
-    <div class="post-time-created">20.04.2017</div>
+    <div class="post-time-created" data-bind="text: date">20.04.2017</div>
 </div>

@@ -10,6 +10,8 @@
     // Components - knockout components intended as parts of pages, a.k.a. components
     components: [
         // [Scaffolded components will be inserted here. To retain this feature, don't remove this comment.]
+        { name: 'loader', path: 'components/loader/loader' },
+        { name: 'app', path: 'components/app/app' },
         { name: 'post', path: 'components/post/post' },
         { name: 'list-of-posts', path: 'components/list-of-posts/list-of-posts' },
         { name: 'contact-form', path: 'components/contact-form/contact-form' },

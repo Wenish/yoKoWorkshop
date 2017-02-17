@@ -27,10 +27,17 @@ requireJsOptimizerConfig = merge(requireJsRuntimeConfig, {
     },
     include: [
         'requireLib',
+        'components/app/app',
+        'components/address-info/address-info',
         'components/nav-bar/nav-bar',
+        'components/loader/loader',
+        'components/contact-form/contact-form',
+        'components/list-of-posts/list-of-posts',
+        'components/post/post',
         'pages/home/home',
         'pages/about/about',
-        'pages/contact/contact'
+        'pages/contact/contact',
+        'pages/feed/feed'
     ],
     insertRequire: ['app/startup'],
     bundles: {
@@ -55,7 +62,8 @@ gulp.task('js', function() {
 gulp.task('css', function() {
     var appCss = gulp.src([
           './node_modules/bootstrap/dist/css/bootstrap.min.css',
-          'src/css/styles.css'
+          'src/css/styles.css',
+          'src/components/**/*.css'
         ]),
         combinedCss = es.concat(appCss).pipe(concat('css.css')),
         fontFiles = gulp.src('./node_modules/bootstrap/fonts/*', {
